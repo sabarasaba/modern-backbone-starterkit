@@ -1,6 +1,6 @@
 node_modules
 dist
-app/bower_components
-app/bundles
+src/bower_components
+src/bundles
 *.log
 .DS_Store

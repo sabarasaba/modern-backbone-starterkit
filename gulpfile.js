@@ -8,7 +8,7 @@ var isProduction = environment === 'production';
 var webpackConfig = require('./webpack.config.js')[environment];
 
 var port = $.util.env.port || 1337;
-var app = 'app/';
+var src = 'src/';
 var dist = 'dist/';
 
 // https://github.com/ai/autoprefixer
@@ -35,7 +35,7 @@ gulp.task('scripts', function() {
 
 // copy html from app to dist
 gulp.task('html', function() {
-  return gulp.src(app + 'index.html')
+  return gulp.src(src + 'index.html')
     .pipe(gulp.dest(dist))
     .pipe($.size({ title : 'html' }))
     .pipe($.connect.reload());
@@ -44,7 +44,7 @@ gulp.task('html', function() {
 gulp.task('styles',function(cb) {
 
   // convert stylus to css
-  return gulp.src(app + 'stylus/main.styl')
+  return gulp.src(src + 'stylus/main.styl')
     .pipe($.stylus({
       // only compress if we are in production
       compress: isProduction,
@@ -71,16 +71,16 @@ gulp.task('serve', function() {
 
 // copy images
 gulp.task('images', function(cb) {
-  return gulp.src(app + 'images/**/*.{png,jpg,jpeg,gif}')
+  return gulp.src(src + 'images/**/*.{png,jpg,jpeg,gif}')
     .pipe($.size({ title : 'images' }))
     .pipe(gulp.dest(dist + 'images/'));
 });
 
 // watch styl, html and js file changes
 gulp.task('watch', function() {
-  gulp.watch(app + 'stylus/*.styl', ['styles']);
-  gulp.watch(app + 'index.html', ['html']);
-  gulp.watch(app + 'scripts/**/*.js', ['scripts']);
+  gulp.watch(src + 'stylus/*.styl', ['styles']);
+  gulp.watch(src + 'index.html', ['html']);
+  gulp.watch(src + 'scripts/**/*.js', ['scripts']);
 });
 
 // remove bundels
