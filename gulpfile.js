@@ -69,11 +69,11 @@ gulp.task('serve', function() {
   });
 });
 
-// copy images
-gulp.task('images', function(cb) {
-  return gulp.src(src + 'images/**/*.{png,jpg,jpeg,gif}')
-    .pipe($.size({ title : 'images' }))
-    .pipe(gulp.dest(dist + 'images/'));
+// copy static files
+gulp.task('static', function(cb) {
+  return gulp.src(src + 'static/**/*')
+    .pipe($.size({ title : 'static' }))
+    .pipe(gulp.dest(dist + 'static/'));
 });
 
 // watch styl, html and js file changes
@@ -94,5 +94,5 @@ gulp.task('default', ['build', 'serve', 'watch']);
 
 // waits until clean is finished then builds the project
 gulp.task('build', ['clean'], function(){
-  gulp.start(['images', 'html','scripts','styles']);
+  gulp.start(['static', 'html','scripts','styles']);
 });
