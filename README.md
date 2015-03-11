@@ -77,4 +77,4 @@ Have feedback, feature request or need help? Create an issue !
 
 ### Copyright
 
-Licensed under MIT License (MIT). See [LICENSE.txt](./LICENSE.txt)
+Licensed under MIT License (MIT). See [LICENSE.txt](./LICENSE)
