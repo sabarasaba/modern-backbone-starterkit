@@ -1,14 +1,5 @@
 var webpack = require('webpack');
 
-var configSettings = {
-  'normal': {},
-  'uglified': {
-    plugins: [
-      new webpack.optimize.UglifyJsPlugin()
-    ]
-  }
-};
-
 module.exports = function(config) {
   config.set({
 
