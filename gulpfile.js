@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var path = require('path');
 var $ = require('gulp-load-plugins')();
 var del = require('del');
-// set variable via $ gulp --type production
+
 var environment = $.util.env.type || 'development';
 var isProduction = environment === 'production';
 var webpackConfig = require('./webpack.config.js')[environment];
@@ -11,7 +11,6 @@ var port = $.util.env.port || 1337;
 var src = 'src/';
 var dist = 'dist/';
 
-// https://github.com/ai/autoprefixer
 var autoprefixerBrowsers = [
   'ie >= 9',
   'ie_mob >= 10',
@@ -24,6 +23,8 @@ var autoprefixerBrowsers = [
   'bb >= 10'
 ];
 
+
+
 gulp.task('scripts', function() {
   return gulp.src(webpackConfig.entry)
     .pipe($.webpack(webpackConfig))
@@ -33,7 +34,6 @@ gulp.task('scripts', function() {
     .pipe($.connect.reload());
 });
 
-// copy html from app to dist
 gulp.task('html', function() {
   return gulp.src(src + 'index.html')
     .pipe(gulp.dest(dist))
@@ -42,13 +42,9 @@ gulp.task('html', function() {
 });
 
 gulp.task('styles',function(cb) {
-
-  // convert stylus to css
   return gulp.src(src + 'stylus/main.styl')
     .pipe($.stylus({
-      // only compress if we are in production
       compress: isProduction,
-      // include 'normal' css into main.css
       'include css' : true
     }))
     .pipe($.autoprefixer({browsers: autoprefixerBrowsers}))
@@ -58,7 +54,6 @@ gulp.task('styles',function(cb) {
 
 });
 
-// add livereload on the given port
 gulp.task('serve', function() {
   $.connect.server({
     root: dist,
@@ -69,24 +64,22 @@ gulp.task('serve', function() {
   });
 });
 
-// copy static files
 gulp.task('static', function(cb) {
   return gulp.src(src + 'static/**/*')
     .pipe($.size({ title : 'static' }))
     .pipe(gulp.dest(dist + 'static/'));
 });
 
-// watch styl, html and js file changes
 gulp.task('watch', function() {
   gulp.watch(src + 'stylus/*.styl', ['styles']);
   gulp.watch(src + 'index.html', ['html']);
   gulp.watch(src + 'app/**/*.js', ['scripts']);
 });
 
-// remove bundels
 gulp.task('clean', function(cb) {
   del([dist], cb);
 });
+
 
 
 // by default build project and then watch files in order to trigger livereload
