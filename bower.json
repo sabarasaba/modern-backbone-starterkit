@@ -1,0 +1,20 @@
+{
+  "name": "modern-backbone-starterkit",
+  "version": "0.1.0",
+  "authors": [
+    "@sabarasaba <rivasign@gmail.com>"
+  ],
+  "description": "Lightweight starting point for a modern backbone web app.",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
