@@ -17,11 +17,11 @@ module.exports = function(config) {
   frameworks: ['mocha'],
 
   files: [
-    'test/index.js'
+    'tests/index.js'
   ],
 
   preprocessors: {
-    'test/*': ['webpack']
+    'tests/*': ['webpack']
   },
 
   webpack: {
