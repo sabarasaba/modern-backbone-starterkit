@@ -4,7 +4,7 @@ import chai from 'chai';
 
 let expect = chai.expect;
 
-import Router from '../src/scripts/router';
+import Router from '../src/app/router';
 
 
 describe('a-test', function() {

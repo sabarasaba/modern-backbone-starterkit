@@ -80,7 +80,7 @@ gulp.task('static', function(cb) {
 gulp.task('watch', function() {
   gulp.watch(src + 'stylus/*.styl', ['styles']);
   gulp.watch(src + 'index.html', ['html']);
-  gulp.watch(src + 'scripts/**/*.js', ['scripts']);
+  gulp.watch(src + 'app/**/*.js', ['scripts']);
 });
 
 // remove bundels

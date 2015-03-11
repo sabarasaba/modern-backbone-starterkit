@@ -1,4 +1,4 @@
-var entry = './src/scripts/main.js',
+var entry = './src/app/main.js',
   output = {
     path: __dirname,
     filename: 'main.js'
