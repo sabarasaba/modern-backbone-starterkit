@@ -17,6 +17,10 @@
   },
   "author": "@sabarasaba <rivasign@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sabarasaba/modern-backbone-starterkit.git"
+  },
   "devDependencies": {
     "babel-core": "^4.0.1",
     "babel-loader": "^4.0.0",
