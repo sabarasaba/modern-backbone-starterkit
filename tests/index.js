@@ -7,13 +7,6 @@ let expect = chai.expect;
 import Router from '../src/app/router';
 
 
-describe('a-test', function() {
-  it('should run a test', function() {
-    expect(1).to.equal(1);
-  });
-});
-
-
 describe('Integration tests', function() {
   const router = new Router();
   Backbone.history.start();
