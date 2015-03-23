@@ -11,11 +11,11 @@ export default Backbone.Router.extend({
     'about': 'about'
   },
 
-  initialize: function() {
+  initialize: () => {
     $('body').append('<div id="js-app"></div>');
   },
 
-  dashboard: function () {
+  dashboard: () => {
     var helloView = new HelloView({
       template: _.template('Hello <%= name %> !')
     }).render();
@@ -23,9 +23,9 @@ export default Backbone.Router.extend({
     $('#js-app').empty().append(helloView.$el);
   },
 
-  about: function() {
+  about: () => {
     var helloView = new HelloView({
-      template: _.template('YO im the about page')
+      template: _.template('Im the about page')
     }).render();
 
     $('#js-app').empty().append(helloView.$el);

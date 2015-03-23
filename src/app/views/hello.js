@@ -8,7 +8,7 @@ export default Marionette.ItemView.extend({
 
   serializeData() {
     return {
-      name: 'ignacio'
+      name: 'world'
     };
   }
 
