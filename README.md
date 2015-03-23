@@ -1,7 +1,5 @@
 # Modern Backbone Starter-kit
 
-[![Build Status](http://img.shields.io/travis/sabarasaba/modern-backbone-starterkit/master.svg?style=flat)](http://travis-ci.org/sabarasaba/modern-backbone-starterkit)
-
 [![Dependency Status](http://david-dm.org/sabarasaba/modern-backbone-starterkit.svg?style=flat)](https://david-dm.org/sabarasaba/modern-backbone-starterkit)
 
 [![Tips](http://img.shields.io/gratipay/sabarasaba.svg?style=flat)](https://gratipay.com/sabarasaba)
