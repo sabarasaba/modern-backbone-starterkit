@@ -1,7 +1,6 @@
 # Modern Backbone Starter-kit
 
 [![Dependency Status](http://david-dm.org/sabarasaba/modern-backbone-starterkit.svg?style=flat)](https://david-dm.org/sabarasaba/modern-backbone-starterkit)
-
 [![Tips](http://img.shields.io/gratipay/sabarasaba.svg?style=flat)](https://gratipay.com/sabarasaba)
 [![Gitter](http://img.shields.io/badge/chat-online-brightgreen.svg?style=flat)](https://gitter.im/sabarasaba/modern-backbone-starterkit)
 
