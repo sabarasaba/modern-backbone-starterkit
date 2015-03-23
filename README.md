@@ -7,9 +7,6 @@
 > This project provides a prepared development environment based on [Gulp](http://gulpjs.com/), [Backbone](http://backbonejs.org/), [Babel](https://babeljs.io/) and [Webpack](http://webpack.github.io/). You can  use it to quickly bootstrap your web application projects. All the parts of this project template are easily replaceable.
 
 
-
-**Demo**: [http://sabarasaba.me/modern-backbone-starterkit](http://sabarasaba.me/modern-backbone-starterkit)
-
 ### Getting Started
 
 Just [clone](github-windows://openRepo/https://github.com/sabarasaba/modern-backbone-starterkit) or [fork](https://github.com/sabarasaba/modern-backbone-starterkit/fork) the repo and start hacking:
