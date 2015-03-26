@@ -1,5 +1,7 @@
 # Modern Backbone Starter-kit
 
+[![Join the chat at https://gitter.im/sabarasaba/modern-backbone-starterkit](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sabarasaba/modern-backbone-starterkit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Dependency Status](http://david-dm.org/sabarasaba/modern-backbone-starterkit.svg?style=flat)](https://david-dm.org/sabarasaba/modern-backbone-starterkit)
 [![Tips](http://img.shields.io/gratipay/sabarasaba.svg?style=flat)](https://gratipay.com/sabarasaba)
 [![Gitter](http://img.shields.io/badge/chat-online-brightgreen.svg?style=flat)](https://gitter.im/sabarasaba/modern-backbone-starterkit)
