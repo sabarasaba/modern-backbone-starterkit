@@ -1,7 +1,6 @@
 # Modern Backbone Starter-kit
 
 [![Dependency Status](http://david-dm.org/sabarasaba/modern-backbone-starterkit.svg?style=flat)](https://david-dm.org/sabarasaba/modern-backbone-starterkit)
-[![Tips](http://img.shields.io/gratipay/sabarasaba.svg?style=flat)](https://gratipay.com/sabarasaba)
 [![Gitter](http://img.shields.io/badge/chat-online-brightgreen.svg?style=flat)](https://gitter.im/sabarasaba/modern-backbone-starterkit)
 
 > This project provides a prepared development environment based on [Gulp](http://gulpjs.com/), [Backbone](http://backbonejs.org/), [Babel](https://babeljs.io/) and [Webpack](http://webpack.github.io/). You can  use it to quickly bootstrap your web application projects. All the parts of this project template are easily replaceable.
