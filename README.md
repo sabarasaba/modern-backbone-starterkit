@@ -33,7 +33,7 @@ By default, it builds in debug mode.
 Builds a minified version of the application in the dist folder.
 
 ```shell
-$ $ gulp build --type production
+$ gulp build --type production
 ```
 
 ### How to Update
