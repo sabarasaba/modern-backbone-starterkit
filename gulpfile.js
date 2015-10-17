@@ -1,7 +1,9 @@
 var gulp = require('gulp');
 var path = require('path');
-var $ = require('gulp-load-plugins')();
 var del = require('del');
+var $ = require('gulp-load-plugins')({
+  pattern: '*',
+});
 
 var environment = $.util.env.type || 'development';
 var isProduction = environment === 'production';
@@ -24,10 +26,9 @@ var autoprefixerBrowsers = [
 ];
 
 
-
 gulp.task('scripts', function() {
   return gulp.src(webpackConfig.entry)
-    .pipe($.webpack(webpackConfig))
+    .pipe($.webpackStream(webpackConfig))
     .pipe(isProduction ? $.uglifyjs() : $.util.noop())
     .pipe(gulp.dest(dist + 'js/'))
     .pipe($.size({ title : 'js' }))
