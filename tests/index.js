@@ -15,16 +15,16 @@ describe('Integration tests', function() {
 
 
   describe('Dashboard page sample testing', function() {
-    it('should render hello ignacio on first render', function() {
-      expect($app.text()).to.equal('Hello ignacio !');
+    it('should render hello world on first render', function() {
+      expect($app.text()).to.equal('Hello world !');
     });
   });
 
   describe('About page sample testing', function() {
-    it('should render YO im the about page', function() {
+    it('should render Im the about page', function() {
       router.navigate('about', {trigger: true, replace: true});
 
-      expect($app.text()).to.equal('YO im the about page');
+      expect($app.text()).to.equal('Im the about page');
     });
   });
 
