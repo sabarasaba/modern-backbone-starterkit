@@ -15,6 +15,8 @@ $ git clone -o upstream https://github.com/sabarasaba/modern-backbone-starterkit
 $ npm install -g gulp karma-cli     # Install Gulp task runner and Karma test runner globally
 $ npm install                       # Install Node.js components listed in ./package.json
 ```
+### A Note on ES Classes
+ES2015 Classes do *not* work well with Backbone or Marionette at time of writing. See https://github.com/jashkenas/backbone/issues/3560. Use Backbone's built in extend functions to get around this for the time being.
 
 ### Development
 Builds the application and starts a webserver with livereload. By default the webserver starts at port 1337.
