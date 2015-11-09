@@ -46,6 +46,8 @@
     "karma-webpack": "1.7.0",
     "mocha": "^2.2.1",
     "webpack": "^1.12.3",
+    "handlebars": "^4.0.3",
+    "handlebars-loader": "^1.1.4",
     "webpack-dev-middleware": "^1.0.11",
     "webpack-stream": "^2.1.1"
   },

@@ -61,6 +61,7 @@ $ karma start
 ### Learn More
 
  * [Backbone.js](http://backbonejs.org/)
+ * [Handlebars](http://handlebarsjs.com/)
  * [Marionette.js](http://marionettejs.com/)
  * [Karma - Spectacular test runner](http://karma-runner.github.io/0.12/index.html)
  * [Webpack](http://webpack.github.io/)

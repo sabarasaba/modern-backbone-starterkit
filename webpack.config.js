@@ -11,7 +11,8 @@ module.exports.development = {
     output: output,
     module : {
         loaders : [
-            { test: /\.js?$/, exclude: /node_modules/, loader: 'babel-loader' }
+            { test: /\.js?$/, exclude: /node_modules/, loader: 'babel-loader' },
+            { test: /\.hbs$/, loader: 'handlebars-loader' }
         ]
     }
 };
@@ -22,7 +23,8 @@ module.exports.production = {
     output: output,
     module : {
         loaders : [
-            { test: /\.js?$/, exclude: /node_modules/, loader: 'babel-loader' }
+            { test: /\.js?$/, exclude: /node_modules/, loader: 'babel-loader' },
+            { test: /\.hbs$/, loader: 'handlebars-loader' }
         ]
     }
 };

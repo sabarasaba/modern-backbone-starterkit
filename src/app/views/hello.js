@@ -2,9 +2,11 @@ import $ from 'jquery';
 import _ from 'lodash';
 import Marionette from 'backbone.marionette';
 
+import template from './template.hbs';
+
 export default Marionette.ItemView.extend({
 
-  template: _.template('Hello <%= name %> !'),
+  template: template,
 
   serializeData() {
     return {
