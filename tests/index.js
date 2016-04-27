@@ -16,7 +16,7 @@ describe('Integration tests', function() {
 
   describe('Dashboard page sample testing', function() {
     it('should render hello world on first render', function() {
-      expect($app.text()).to.equal('Hello world !');
+      expect($app.text()).to.equal('Hello world!');
     });
   });
 
