@@ -4,5 +4,6 @@ npm-debug.log
 node_modules
 coverage
 public
+!.gitkeep
 yarn-error.log
 .env
