@@ -1,6 +1,7 @@
-node_modules
-dist
-src/bower_components
-src/bundles
-*.log
 .DS_Store
+dist
+npm-debug.log
+node_modules
+coverage
+yarn-error.log
+.env

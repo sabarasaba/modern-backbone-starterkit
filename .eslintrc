@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base"
+  ],
+  "plugins": [
+    "no-unused-vars-rest"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "globals": {
+    "__DEV__": true,
+    "__PROD__": true,
+    "__DEBUG__": true,
+    "__COVERAGE__": true,
+    "__BASENAME__": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack/webpack.config.js"
+      }
+    }
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "comma-dangle": 0,
+    "max-len": 0,
+    "no-shadow": 0,
+    "arrow-body-style": 0,
+    "arrow-parens": 0,
+    "global-require": 0,
+    "no-unused-expressions": 0,
+    "no-confusing-arrow": 0,
+    "no-unused-vars": 0,
+    "no-console": 0,
+    "no-constant-condition": 0,
+    "jsx-a11y/html-has-lang": 0,
+    "import/no-dynamic-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
+    "no-unused-vars-rest/no-unused-vars": ["error", {"ignoreDestructuredVarsWithRest": true}]
+  }
+}

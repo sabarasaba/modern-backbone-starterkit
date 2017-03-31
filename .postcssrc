@@ -1,0 +1,9 @@
+{
+  "map": true,
+  "plugins": {
+    "postcss-import": {},
+    "postcss-cssnext": {},
+    "postcss-nested": {}
+  }
+}
+
