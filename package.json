@@ -20,18 +20,14 @@
     "prepush": "yarn lint"
   },
   "jest": {
-    "moduleDirectories": [
-      "src",
-      "node_modules"
-    ],
-    "moduleNameMapper": {
-      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|css|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/fileMock.js",
-      "^(components|containers)$": "<rootDir>/test/componentsMock.js"
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.hbs$": "<rootDir>/src/utils/testHandlebarsLoader.js"
     }
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "babel-jest": "^18.0.0",
+    "babel-jest": "^19.0.0",
     "concurrently": "^3.1.0",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.0.0",
@@ -60,6 +56,7 @@
     "extract-text-webpack-plugin": "^2.0.0-beta",
     "file-loader": "^0.10.0",
     "flexboxgrid": "^6.3.1",
+    "handlebars": "^4.0.6",
     "handlebars-loader": "^1.4.0",
     "history": "3.0.0",
     "html-webpack-harddisk-plugin": "^0.1.0",
