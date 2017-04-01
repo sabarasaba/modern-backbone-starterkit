@@ -21,9 +21,10 @@ const config = {
   entry: {
     app: [path.join(__dirname, '../src/app')],
     vendor: [
-      'backbone',
+      'jquery',
       'lodash',
-      'jquery'
+      'backbone',
+      'backbone.marionette'
     ]
   },
   output: {
