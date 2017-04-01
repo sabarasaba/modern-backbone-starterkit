@@ -11,10 +11,10 @@
     "webpack"
   ],
   "scripts": {
-    "start": "serve -p 3000 .",
+    "start": "serve --port 3000 -s public",
     "test": "jest",
     "dev": "node webpack/webpack-dev-server",
-    "coverage": "npm test -- --coverage",
+    "coverage": "yarn test -- --coverage",
     "lint": "eslint src",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config",
     "prepush": "yarn lint"
