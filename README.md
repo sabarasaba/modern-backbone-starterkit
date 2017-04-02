@@ -13,6 +13,7 @@ Just [clone](github-windows://openRepo/https://github.com/sabarasaba/modern-back
 ```shell
 $ git clone https://github.com/sabarasaba/modern-backbone-starterkit.git AwesomeApp && cd $_
 $ yarn install
+$ cp .env.example .env
 ```
 
 ### Development
