@@ -15,9 +15,6 @@ $ git clone https://github.com/sabarasaba/modern-backbone-starterkit.git Awesome
 $ yarn install
 ```
 
-### A Note on ES Classes
-ES2015 Classes do *not* work well with Backbone or Marionette at time of writing. See https://github.com/jashkenas/backbone/issues/3560. Use Backbone's built in extend functions to get around this for the time being.
-
 ### Development
 Uses webpack-dev-server with HMR to serve your app:
 
@@ -44,6 +41,20 @@ If you wanna serve the production app you can do so by running:
 $ yarn start
 ```
 
+### How to run tests
+
+You can easily run the unit tests by doing:
+
+```shell
+$ yarn test
+```
+
+Or check your code coverage with:
+
+```shell
+$ yarn coverage
+```
+
 ### Linter
 Currently using airbnb's presets, you can run it with:
 
@@ -63,19 +74,9 @@ $ git merge upstream/master
 $ npm install
 ```
 
-### How to run tests
+### A Note on ES Classes
+ES2015 Classes do *not* work well with Backbone or Marionette at time of writing. See https://github.com/jashkenas/backbone/issues/3560. Use Backbone's built in extend functions to get around this for the time being.
 
-You can easily run the unit tests by doing:
-
-```shell
-$ yarn test
-```
-
-Or check your code coverage with:
-
-```shell
-$ yarn coverage
-```
 
 ### Learn More
 
