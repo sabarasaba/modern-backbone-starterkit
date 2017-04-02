@@ -3,7 +3,7 @@
 [![Gitter](http://img.shields.io/badge/chat-online-brightgreen.svg?style=flat)](https://gitter.im/sabarasaba/modern-backbone-starterkit)
 
 This project provides a prepared development environment for modern backbone
-development. ES6, Jest, HMR, css-next; all ready for you to use.
+development. ES6, Jest, HMR, css-next, eslint; all ready for you to use.
 
 
 ### Getting Started
@@ -44,6 +44,12 @@ If you wanna serve the production app you can do so by running:
 $ yarn start
 ```
 
+### Linter
+Currently using airbnb's presets, you can run it with:
+
+```shell
+$ yarn lint
+```
 
 ### How to Update
 
