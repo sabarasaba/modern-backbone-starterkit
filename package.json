@@ -22,7 +22,7 @@
   "jest": {
     "transform": {
       "^.+\\.js$": "babel-jest",
-      "^.+\\.hbs$": "<rootDir>/src/utils/testHandlebarsLoader.js"
+      "^.+\\.hbs$": "<rootDir>/webpack/jestHandlebarsLoader.js"
     }
   },
   "devDependencies": {
