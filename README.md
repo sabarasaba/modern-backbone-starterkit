@@ -90,6 +90,7 @@ ES2015 Classes do *not* work well with Backbone or Marionette at time of writing
  * [Webpack](https://webpack.js.org/)
  * [Babel](https://babeljs.io/)
  * [css-next](http://cssnext.io/)
+ * [eslint](http://eslint.org/)
 
 ### Support
 
