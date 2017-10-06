@@ -10,7 +10,6 @@ const port = (+process.env.APP_PORT) || 3001
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
-  hot: true,
   host: ip,
   stats: false,
   historyApiFallback: true,
