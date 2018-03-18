@@ -10,6 +10,12 @@ import '../styles/index.css'
 import Router from './router'
 
 // eslint-disable-next-line
-new Router()
+new Router();
 
 Backbone.history.start()
+
+if (module.hot) {
+  module.hot.accept('./router', () => {
+    location.reload()
+  })
+}
