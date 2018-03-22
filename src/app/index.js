@@ -13,9 +13,3 @@ import Router from './router'
 new Router();
 
 Backbone.history.start()
-
-if (module.hot) {
-  module.hot.accept('./router', () => {
-    location.reload()
-  })
-}
