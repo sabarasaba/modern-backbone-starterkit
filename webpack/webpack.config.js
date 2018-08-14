@@ -8,7 +8,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const ip = process.env.APP_IP || '0.0.0.0'
 const port = (+process.env.APP_PORT) || 3001
@@ -65,7 +64,6 @@ const config = {
     new CopyWebpackPlugin([
       { from: path.resolve(__dirname, '../src/static'), to: 'static' }
     ])
-    // new BundleAnalyzerPlugin()
   ],
   module: {
     rules: [
